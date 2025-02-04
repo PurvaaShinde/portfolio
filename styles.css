@@ -1,0 +1,112 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #081F5C; /* Updated background color */
+    color: #FFF9F0; /* Updated text color */
+    background-image: url('path/to/your/image.jpg'); /* Add the image URL if you want a background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background: #081F5C; /* Updated background color */
+    color: #FFF9F0; /* Updated text color */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background: #334EAC; /* Ensure the background color is consistent across the nav */
+}
+
+nav ul {
+    display: flex; /* Enable flexbox layout for the list */
+    justify-content: space-around; /* Evenly distributes items with equal space around them */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0; /* Remove additional margins */
+}
+
+nav ul li a {
+    color: #FFF9F0; /* Updated text color */
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+    color: #FFF9F0; /* Updated text color */
+}
+
+.custom-hr {
+    border: none;
+    height: 1px;
+    background-color: #334EAC; /* Updated hr color */
+    margin: 1rem 0;
+}
+
+.learning-pathways, .projects-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #081F5C; /* Ensure text color is consistent */
+}
+
+.pathway-box, .project-box {
+    flex: 0 1 22%;
+    background-color: #D0E3ff;
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    color: #081F5C; /* Adding text color for boxes */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.pathway-box:hover, .project-box:hover {
+    background-color: #334EAC; /* Updated hover color */
+    color: #FFF9F0; /* Ensure text color is consistent on hover */
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #D0E3ff;
+    margin-top: 1rem;
+    border-radius: 3px;
+    color: #081F5C; /* Adding text color for contact links */
+}
+
+footer {
+    background: #081F5C; /* Updated background color */
+    color: #FFF9F0; /* Updated text color */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul li a:hover {
+    color: #D0E3ff;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .learning-pathways, .projects-grid {
+        flex-direction: column;
+    }
+    .pathway-box, .project-box {
+        flex: 1 1 100%;
+    }
+}
+
